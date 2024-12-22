@@ -1,0 +1,8 @@
+services:
+  claude:
+    stop_grace_period: 1s
+    container_name: claude
+    build:
+      context: ./claude
+    ports:
+      - 4173:4173
